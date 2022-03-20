@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/header.css" />
     <link rel="stylesheet" href="/styles.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -14,10 +16,29 @@
     <title>Sidebar</title>
   </head>
   <body>
-    <span class="material-icons hamburguer-icon" onclick="toggleMenu()"
-      >menu</span
-    >
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content">
+        <a href="#">
+          <img src="logo.png" width="100" />
+        </a>
+        <ul class="header__navigation-menu">
+          <li class="header__navigation-menu-item"><a href="#"> Home </a></li>
+          <li class="header__navigation-menu-item">
+            <a href="#"> Quem somos </a>
+          </li>
+          <li class="header__navigation-menu-item"><a href="#"> Blog </a></li>
+        </ul>
 
+        <span
+          class="material-icons md-36 header__hamburguer-icon"
+          onclick="toggleMenu()"
+          >menu</span
+        >
+      </div>
+    </header>
+
+    <!-- Menu mobile -->
     <div id="sidebar" class="sidebar-wrapper">
       <!--Top menu -->
       <div class="sidebar">
@@ -29,13 +50,12 @@
           </span>
         </header>
 
+        <!--menu item-->
         <ul class="sidebar__menu">
           <li class="sidebar__menu-item"><a href="#"> Home </a></li>
           <li class="sidebar__menu-item"><a href="#"> Quem somos </a></li>
           <li class="sidebar__menu-item"><a href="#"> Blog </a></li>
         </ul>
-
-        <!--menu item-->
       </div>
     </div>
   </body>

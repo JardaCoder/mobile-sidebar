@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+body {
+  background: #f5f6fa;
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1292px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}

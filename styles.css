@@ -1,19 +1,4 @@
-* {
-  box-sizing: border-box; /* Opera/IE 8+ */
-}
-body {
-  background: #f5f6fa;
-  margin: 0;
-}
-
 /* Mobile side bar */
-
-.hamburguer-icon {
-  display: none !important;
-  position: absolute;
-  right: 0;
-  transition: all ease 500ms;
-}
 
 .material-icons.white {
   color: #fff;
@@ -32,6 +17,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
 
   background-color: rgba(0, 0, 0, 0.5);
   transition: all ease;
@@ -91,9 +77,5 @@ body {
 @media (max-width: 1020px) {
   .sidebar-wrapper {
     display: block;
-  }
-
-  .hamburguer-icon {
-    display: block !important;
   }
 }
