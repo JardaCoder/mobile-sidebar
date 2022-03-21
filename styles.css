@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+body {
+  background: #f5f6fa;
+  margin: 0;
+}
+
+/* Mobile side bar */
+
+.hamburguer-icon {
+  display: none !important;
+  position: absolute;
+  right: 0;
+  transition: all ease 500ms;
+}
+
+.material-icons.white {
+  color: #fff;
+  margin: 0;
+  cursor: pointer;
+}
+
+.sidebar-wrapper {
+  display: none;
+  color: #fff;
+}
+
+/* --- Active sideBar --- */
+
+.sidebar-wrapper--active {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all ease;
+
+  z-index: 29;
+}
+
+.sidebar-wrapper--active .sidebar {
+  right: 0px;
+}
+
+.sidebar-wrapper--active .hamburguer-icon {
+  right: 0px;
+  color: white;
+}
+
+/* --- Active sideBar --- */
+
+.sidebar {
+  width: 235px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -235px;
+  padding: 20px 0;
+
+  background: rgb(5, 68, 104);
+
+  transition: all 0.5s ease;
+  z-index: 30;
+}
+.sidebar__content {
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+}
+
+.sidebar__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar__title {
+  text-align: left;
+}
+
+.sidebar__navigation {
+  width: 100%;
+}
+
+.sidebar__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar__menu > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar__menu-item {
+}
+@media (max-width: 1020px) {
+  .sidebar-wrapper {
+    display: block;
+  }
+
+  .hamburguer-icon {
+    display: block !important;
+  }
+}
