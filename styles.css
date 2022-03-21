@@ -58,17 +58,12 @@ body {
   position: fixed;
   top: 0;
   right: -235px;
-  padding: 20px 0;
+  padding: 20px 8px;
 
   background: rgb(5, 68, 104);
 
   transition: all 0.5s ease;
   z-index: 30;
-}
-.sidebar__content {
-  width: 100%;
-  height: 100%;
-  padding: 0 8px;
 }
 
 .sidebar__header {
@@ -95,12 +90,9 @@ body {
   list-style: none;
 }
 
-.sidebar__menu > li > a {
+.sidebar__menu-item > a {
   color: #fff;
   text-decoration: none;
-}
-
-.sidebar__menu-item {
 }
 @media (max-width: 1020px) {
   .sidebar-wrapper {
